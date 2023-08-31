@@ -1,21 +1,20 @@
-# Awesome CV React
+# Awesome CV 11ty
 
-This is highly inspired by [Awesome-CV](https://github.com/posquit0/Awesome-CV). It's my attempt at a port to React for an easier config via YAML, simpler styling via CSS, simpler layout with JSX, and easier dependency management via npm.
+A fork of [awesome-cv-react](https://github.com/sygint/awesome-cv-react) to [eleventy](https://www.11ty.dev/). This fork has easier markup and style via 11ty's WebC and PostCSS and much simpler build process and dependency tree with 11ty. It has the same easy configuration via YAML.
 
 ## Preview
 
-You can see [PDF](preview/resume.pdf)
+You can see [PDF](build/resume.pdf)
 
-[![Résumé](preview/resume_page_1.png)](preview/resume.pdf)
+[![Résumé](build/resume_page_1.png)](build/resume.pdf)
 
 # Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This project is powered by [eleventy](https://github.com/11ty/eleventy/).
 
 # Configuration
 
-All of the config is found in `details.yaml` in the root directory. It's fairly self explanatory, feel free to hit me up if you have any questions.
+All of the config is found in `details.yaml` in the `src/_data` directory. It's fairly self explanatory, feel free to hit me up if you have any questions.
 
 # Available Scripts
 
@@ -23,11 +22,11 @@ In the project directory, you can run:
 
 ### `npm run build`
 
-Builds your `resume.pdf` to the `build` folder. It utilizes [@react-pdf/renderer](https://github.com/diegomura/react-pdf) to render the JSX into a `.pdf`.
+Builds your `resume.pdf` to the `build` folder. It utilizes [Puppeteer](https://github.com/puppeteer/puppeteer) to save the HTML as a `.pdf`.
 
 ## `npm run dev`
 
-Runs a nodemon watch script that watches for changes and rebuilds your `cv.pdf`.
+Runs a nodemon watch script that watches for changes and rebuilds your `resume.pdf`.
 
 ## Work In Progress
 

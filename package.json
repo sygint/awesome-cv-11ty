@@ -1,33 +1,36 @@
 {
-  "name": "awesome-cv-react",
-  "version": "0.1.0",
+  "name": "awesome-cv-11ty",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "@types/node": "^16.18.12",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^4.9.5"
-  },
   "scripts": {
-    "build": "mkdir -p build && tsx ./build.tsx && npm run preview",
-    "preview": "cp ./build/resume.pdf ./preview && tsx ./convert.ts",
-    "dev": "nodemon"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "dev": "run-p start:dev nodemon",
+    "start:dev": "npm run clean:build && npx @11ty/eleventy --serve",
+    "build": "run-s build:html build:assets",
+    "build:html": "npm run clean:build && npx @11ty/eleventy",
+    "build:assets": "tsx ./scripts/build.ts",
+    "clean:build": "rimraf ./build"
   },
   "devDependencies": {
-    "@react-pdf/renderer": "^3.1.9",
+    "@11ty/eleventy-plugin-webc": "^0.11.1",
+    "eleventy-plugin-postcss": "^1.0.4",
     "js-yaml": "^4.1.0",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
-    "pdf-image": "^2.0.0",
-    "pdf-to-png-converter": "^2.7.1",
-    "tsx": "^3.12.6"
+    "pdf2pic": "^3.0.1",
+    "postcss": "^8.4.29",
+    "postcss-browser-reporter": "^0.6.0",
+    "postcss-font-base64": "^1.0.5",
+    "postcss-import": "^15.1.0",
+    "postcss-import-url": "^7.2.0",
+    "postcss-inline-base64": "^7.3.1",
+    "postcss-nested": "^6.0.1",
+    "puppeteer": "^20.7.2",
+    "rimraf": "^5.0.1",
+    "tsx": "^3.12.7",
+    "vitest": "^0.32.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "pdf2pic": "^3.0.1"
   }
 }

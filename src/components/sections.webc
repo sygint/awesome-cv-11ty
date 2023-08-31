@@ -1,0 +1,118 @@
+<section webc:for="(section) of sections" webc:root="override">
+  <h1 @html="makeTitle(section.title)">title</h1>
+  <div
+    :class="(section.type === '2-col' ? 'section-body two-col' : 'section-body')"
+  >
+    <template webc:if="(section.type === '2-col')" webc:nokeep>
+      <div webc:for="(item, index) of section.items" class="sub-section">
+        <div class="sub-section-title" @text="item.title">
+          sub section title
+        </div>
+        <div class="sub-section-items" @text="join(item.items, ',')">
+          sub section items
+        </div>
+      </div>
+    </template>
+    <template webc:else webc:nokeep>
+      <div webc:for="(item, index) of section.items" class="sub-section">
+        <div class="sub-section-header">
+          <span class="organization" @text="item.organization"
+            >organization</span
+          >
+          <span class="location" @text="item.location">location</span>
+        </div>
+        <div class="sub-section-header">
+          <span class="position" @text="item.position">position</span>
+          <span class="dates" @text="item.dates">dates</span>
+        </div>
+        <ul class="sub-section-items">
+          <div webc:for="(subitem) of item.items" webc:nokeep>
+            <li @text="subitem">subitem</li>
+          </div>
+        </ul>
+      </div>
+    </template>
+  </div>
+</section>
+
+<style>
+  section {
+    font-family: var(--sectionFontFamily);
+    margin-bottom: var(--sectionMarginBottom);
+  }
+
+  section h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: var(--sectionHeaderFontSize);
+    font-weight: var(--sectionHeaderFontWeight);
+    color: var(--colorText);
+  }
+
+  section h1:after {
+    content: "";
+    width: 100%;
+    height: 11px;
+    margin-left: 2pt;
+    border-bottom: 2px solid black;
+  }
+
+  section h1 span {
+    color: var(--colorHighlight);
+  }
+
+  .section-body {
+    padding: 0.15cm 0;
+  }
+
+  .two-col .sub-section {
+    display: flex;
+    flex-direction: row;
+    gap: 25pt;
+    margin-bottom: 0.15cm;
+  }
+
+  .sub-section-title {
+    width: 3.75cm;
+
+    font-weight: var(--fontWeightBold);
+    text-align: right;
+    color: var(--colorText);
+  }
+
+  .sub-section-items {
+    width: 100%;
+    padding-left: 13px;
+
+    font-size: 9pt;
+    font-weight: var(--fontWeightLight);
+  }
+
+  .sub-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .organization {
+    font-weight: var(--fontWeightBold);
+    color: var(--colorText);
+  }
+
+  .location {
+    color: var(--colorhighlight);
+    font-style: italic;
+  }
+
+  .position {
+    font-size: var(--positionFontSize);
+    text-transform: uppercase;
+  }
+
+  .dates {
+    font-size: var(--datesFontSize);
+    font-style: italic;
+  }
+</style>

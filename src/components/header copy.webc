@@ -1,0 +1,29 @@
+<header class="main-header">
+  <span class="name">{{{stylizeName name}}}</span>
+  <span class="positions">
+    {{#each positions as |position|}}
+      <span>{{position}}</span>
+    {{/each}}
+  </span>
+  <span class="extras">
+    {{#if phone}}
+      <span>{{{icons.phone}}}<span>{{phone}}</span></span>
+    {{/if}}
+
+    {{#if email}}
+      <span>{{{icons.email}}}<span>{{email}}</span></span>
+    {{/if}}
+
+    {{#if website}}
+      <span>{{{icons.website}}}<span>{{website}}</span></span>
+    {{/if}}
+
+    {{#if github}}
+      <span>{{{icons.github}}}<span>{{github}}</span></span>
+    {{/if}}
+
+    {{#if code}}
+      <span>{{{icons.code}}}<span>{{code}}</span></span>
+    {{/if}}
+  </span>
+</header>

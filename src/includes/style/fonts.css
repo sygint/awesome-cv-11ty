@@ -1,0 +1,147 @@
+/* Roboto Normal */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-normal-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-normal-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+/* Roboto Thin */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-thin-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-thin-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+/* Roboto Light */
+@font-face {
+  font-family: "Robot";
+  src: url("./fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+/* Roboto Medium */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-medium-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-medium-webfont.woff") format("woff");
+  font-style: 600;
+  font-weight: normal;
+}
+/* Roboto Bold */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-bold-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* Roboto Normal Italic */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-normal-italic-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-normal-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: normal;
+}
+/* Roboto Thin Italic */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-thin-italic-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-thin-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 100;
+}
+/* Roboto Light Italic */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-light-italic-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-light-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 300;
+}
+/* Roboto Medium Italic */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-medium-italic-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-medium-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 600;
+}
+/* Roboto Bold Italic */
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-bold-italic-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-bold-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* SourceSansPro Regular */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+/* SourceSansPro Light */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-light-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+/* SourceSansPro Semibold */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-semibold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+/* SourceSansPro Bold */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* SourceSansPro Normal Italic */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-italic-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: normal;
+}
+/* SourceSansPro Light Italic */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-lightitalic-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-lightitalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 300;
+}
+/* SourceSansPro Semibold Italic */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-semibolditalic-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-semibolditalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 600;
+}
+/* SourceSansPro Bold Italic */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/sourcesanspro-bolditalic-webfont.woff2") format("woff2"),
+    url("./fonts/sourcesanspro-bolditalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 900;
+}

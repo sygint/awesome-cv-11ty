@@ -1,0 +1,26 @@
+---
+layout: "layout.webc"
+title: Home
+---
+
+<script webc:setup>
+  const { name, positions, phone, email, website, github, code, sections } =
+    this.$data.details;
+</script>
+
+<masthead
+  :@name="name"
+  :@positions="positions"
+  :@phone="phone"
+  :@email="email"
+  :@website="website"
+  :@github="github"
+  :@code="code"
+></masthead>
+<sections :@sections="sections"></sections>
+
+<style webc:bucket="global">
+  @import url("./includes/style/variables.css");
+  @import url("./includes/style/fonts.css");
+  @import url("./includes/style/global.css");
+</style>

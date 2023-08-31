@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <title>Awesome CV 11ty</title>
+    <meta charset="UTF-8" />
+    <style @raw="getBundle('css', 'global')" webc:keep></style>
+    <style @raw="getBundle('css')" webc:keep></style>
+  </head>
+  <body @html="this.content"></body>
+</html>

@@ -1,0 +1,80 @@
+<header webc:root="override" class="main-header">
+  <span class="name" @html="stylizeName(name)">Full Name</span>
+  <span class="positions">
+    <span webc:for="(position) of positions" @text="position">position</span>
+  </span>
+  <span class="extras">
+    <span webc:if="phone"
+      ><icon @icon="phone"></icon><span @text="phone">phone</span></span
+    >
+    <span webc:if="email"
+      ><icon @icon="email"></icon><span @text="email">email</span></span
+    >
+    <span webc:if="website"
+      ><icon @icon="website"></icon><span @text="website">website</span></span
+    >
+    <span webc:if="github"
+      ><icon @icon="github"></icon><span @text="github">github</span></span
+    >
+    <span webc:if="code"
+      ><icon @icon="code"></icon><span @text="code">code</span></span
+    >
+  </span>
+</header>
+
+<style>
+  header.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4pt;
+
+    margin-top: -0.15cm;
+    margin-bottom: 15px;
+
+    font-family: var(--headerFontFamily);
+    font-size: var(--headerFontSize);
+  }
+
+  .name {
+    font-size: var(--headerNameFontSize);
+    font-weight: var(--fontWeightLight);
+    color: var(--colorText);
+  }
+
+  .name > span {
+    color: var(--colorLightText);
+    font-weight: var(--fontWeightBold);
+  }
+
+  .positions {
+    display: flex;
+    flex-direction: row;
+    gap: var(--headerPositionsGap);
+
+    font-size: var(--headerPositionsFontSize);
+    color: var(--colorHighlight);
+    text-transform: uppercase;
+  }
+
+  .positions span:not(:first-child):before {
+    content: "·";
+    padding-right: var(--headerPositionsGap);
+  }
+
+  .extras {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .extras > span {
+    display: flex;
+    gap: calc(var(--headerExtrasGap) / 2);
+  }
+
+  .extras > span:not(:first-child):before {
+    content: "|";
+    margin-left: calc(var(--headerExtrasGap) / 2);
+    margin-right: calc(var(--headerExtrasGap) / 4);
+  }
+</style>

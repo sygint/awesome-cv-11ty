@@ -1,0 +1,40 @@
+html {
+  background: #fff;
+}
+
+body {
+  padding: var(--pageMargins);
+  color: var(--colorLightText);
+  font-family: var(--pageFontFamily);
+  font-size: var(--pageFontSize);
+}
+
+path {
+  fill: var(--colorLightText) !important;
+}
+
+/* 
+html {
+  max-width: 21cm;
+  margin: 0 auto;
+  background: #777;
+}
+
+body {
+  padding: 0;
+  background: #fff;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 100;
+  width: 16cm;
+  height: 29.7cm;
+  background: url("../resume_page_1.png") no-repeat;
+}
+
+.resume {
+  position: absolute;
+  z-index: 500;
+  padding: var(--pageMargins);
+} */

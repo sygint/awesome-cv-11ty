@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+
+  --white: #fff;
+  --black: #000;
+  --gray: #5d5d5d;
+  --grayDark: #333;
+  --grayMedium: #414141;
+  --grayLight: $999;
+
+  --green: #c2e15f;
+  --orange: #fda333;
+  --purple: #d3a4f9;
+  --red: #fb4485;
+  --blue: #6ce0f1;
+
+  --awesomeEmerald: #00a388;
+  --awesomeSkyBlue: #0395de;
+  --awesomeRed: #dc3522;
+  --awesomePink: #ef4089;
+  --awesomeOrange: #ff6138;
+  --awesomeNephritis: #27ae60;
+  --awesomeConcrete: #95a5a6;
+  --awesomeDarkNight: #131a28;
+
+  /* Fonts Faces and Weights */
+
+  --SourceSansPro: "Source Sans Pro";
+  --Roboto: "Roboto";
+
+  --fontWeightLight: 100;
+  --fontWeightBold: 900;
+
+  /* General Theming */
+
+  --colorHighlight: var(--awesomeRed);
+  --colorText: var(--grayDark);
+  --colorLightText: var(--gray);
+  --fontFamily: var(--SourceSansPro);
+
+  /* Page */
+
+  --pageMargins: 0.8cm 1.4cm 1.8cm;
+  --pageFontFamily: var(--SourceSansPro);
+  --pageFontSize: 10pt;
+
+  /* Header */
+
+  --headerFontFamily: var(--Roboto);
+  --headerFontSize: 8pt;
+  --headerNameFontSize: 32pt;
+  --headerPositionsFontSize: 7.6pt;
+  --headerPositionsGap: 4pt;
+  --headerExtrasGap: 12pt;
+
+  /* Section */
+
+  --sectionFontFamily: var(--SourceSansPro);
+  --sectionfontSize: 12pt;
+  --sectionHeaderFontSize: 16pt;
+  --sectionHeaderFontWeight: var(--fontWeightBold);
+  --sectionMarginBottom: 0.4cm;
+
+  /* Experience */
+
+  --positionFontSize: 7pt;
+  --datesFontSize: 8pt;
+}
